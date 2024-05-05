@@ -1,0 +1,88 @@
+.home-page {
+    width: 90%;
+    margin: 10px auto;
+    background-image: url(../images/bgmainbody.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 35vw;
+    display: flex;
+    justify-content:center;
+    align-items: flex-end;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.home-inner {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.home-inner h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.home-inner p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 13px 20px;
+    font-size: 1.2rem;
+    background-color: #ffffff;
+    color: #333;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+}
+
+button:hover {
+    background-color: #bd6a6a;
+    /* Light gray on hover */
+}
+/* small liptop */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {}
+
+/*Tablet Screen  */
+@media only screen and (min-width: 771px) and (max-width: 991px) {
+.home-inner h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.home-inner p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+button {
+    padding: 10px 14px;
+    font-size: 1.1rem;
+}
+}
+
+/* Media query for small screens */
+
+@media only screen and (max-width: 771px) {
+
+.home-inner h2 {
+font-size: 1.5rem; /* Adjusted font size for mobile */
+margin-bottom: 10px; /* Adjusted margin */
+}
+.home-inner p {
+display: none;
+}
+
+button {
+padding: 6px 10px; /* Adjusted button padding for mobile */
+font-size: 0.9rem; /* Adjusted font size for mobile */
+}
+
+}

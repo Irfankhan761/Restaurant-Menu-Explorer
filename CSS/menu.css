@@ -1,0 +1,213 @@
+/* main page */
+.menu-page{
+    width: 90%;
+    margin: 30px auto;    
+
+}
+/* main items */
+.menu-mainItem{
+    margin: 10px auto; 
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding: 10px 0px;
+
+}
+.menu-mainItem h1{
+    font-size: 2rem;
+    
+}
+.menu-mainItem p{
+    font-size: 1rem;
+    width: 100%;
+    text-align: justify;
+    color: #747474;
+}
+.menu-samples{
+    display: flex;
+    justify-content: space-between;
+    overflow-x: scroll;
+     scrollbar-width: none;
+    
+   
+}
+.sample-items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    padding: 9px;
+
+}
+
+.sample-items img{
+    width: 110px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+    
+}
+.sample-items img:hover{
+    /* i want to increase size here */
+    transform: scale(1.1);
+}
+.sample-items img:active{
+    border: 4px solid orange;
+    padding: 2px;
+    
+}
+.sample-items h3{
+    margin-top: 10px;
+    color: #747474;
+    font-size: 1rem;
+    
+}
+hr{
+  margin: 10px auto;
+  height: 5px;
+  background-color: orange;
+  border: orange;
+}
+
+/* sub-it */
+
+
+/* .menu-subItem{
+
+} */
+.menu-subItem h1{
+    font-size: 2rem;
+}
+.dish-container{
+    margin: 15px 0px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.dishes {
+    margin: 10px auto;
+    width: 24%;
+    padding: 5px;
+    text-align: justify;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease;
+}
+
+.dishes:hover {
+    transform: translateY(-5px); 
+}
+
+/* .dishes:hover{
+    transform: scale(1.04);
+} */
+.dishes-mainImgs{
+    position: relative;
+
+}
+.foodimg{
+    width: 100%;
+    border-radius: 15px;
+}
+.plusimg{
+    position: absolute;
+    bottom: 15px;
+    right: 10px;
+    cursor: pointer;
+    width: 35px;
+    border-radius: 50%;
+
+
+}
+
+.dish-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0px;
+    
+
+}
+.dish-heading p{
+ font-size: 20px;
+ font-weight: bold;
+}
+.dish-heading img{
+    width: 75px;
+
+}
+.dish-para{
+    font-size: 12px;
+    color: #676767;
+
+}
+.price{
+    color: tomato;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0;
+
+}
+
+
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* small liptop */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+    .dish-heading p{
+        font-size: 16px;
+       }
+    .dish-heading img{
+        width: 65px;
+    
+    }
+    .dish-para{
+        font-size: 10px;
+        color: #676767;
+    
+    }
+
+}
+
+/*Tablet Screen  */
+@media only screen and (min-width: 771px) and (max-width: 991px) {
+    .dish-heading p{
+        font-size: 12px;
+       }
+    .dish-heading img{
+        width: 55px;
+    
+    }
+    .dish-para{
+        font-size: 9px;
+        color: #676767;
+    
+    }
+    .price{
+        font-size: 18px;
+    }
+}
+
+/* Media query for small screens */
+@media only screen and (max-width: 771px) {
+    .dishes{
+        width: 48%;
+        margin: 10px 0px;
+    }
+    .dish-heading p{
+        font-size: 12px;
+       }
+    .dish-heading img{
+        width: 55px;
+    
+    }
+    .dish-para{
+        font-size: 9px;
+        color: #676767;
+    
+    }
+    .price{
+        font-size: 18px;
+    }
+
+}

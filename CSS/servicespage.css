@@ -1,0 +1,32 @@
+.services-page{
+ width: 90%;
+ margin: 10px auto;
+}
+.services-page h1{
+    text-align: center;
+    padding: 20px 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2.5rem;
+}
+.apps{
+display: flex;
+justify-content: center;
+}
+.apps img{
+width: 200px;
+ margin: 0 30px;
+ cursor: pointer;
+ transition: transform 0.3s ease-in;
+}
+.apps img:hover{
+    transform: scale(1.1);
+   }
+
+   @media only screen and (max-width: 771px) {
+    .services-page h1{
+        font-size: 1.5rem;
+    }
+    .apps img{
+        width: 140px;
+    }
+   }

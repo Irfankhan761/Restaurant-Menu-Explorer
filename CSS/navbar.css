@@ -1,0 +1,128 @@
+/* Navbar styles */
+.navbar {
+    width: 96%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #49557e;
+    /* background-color: lightcoral; */
+    padding: 20px 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.3rem;
+    font-weight: normal;
+
+}
+
+/* Left section styles */
+/* .left {} */
+
+.logo img {
+    width: 150px;
+}
+
+.hamburger {
+    display: none;
+}
+
+/* Mid section styles */
+/* .mid{} */
+.mid ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+
+.mid ul li {
+    cursor: pointer;
+    position: relative;
+    margin: 0px 20px;
+
+}
+
+.mid ul li::after {
+    content: '';
+    /* Create a pseudo-element */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    /* Initially hidden */
+    height: 2.5px;
+    background-color: rgb(22, 39, 189);
+    transition: width 0.3s ease;
+    /* Transition effect for width */
+}
+
+.mid ul li:hover::after {
+    width: 100%;
+}
+
+/* Right section styles */
+/* .right{} */
+.right ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+
+.right ul li {
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.right ul li a {
+    text-decoration: none;
+    color: #49557e;
+    border:2px solid orange ;
+    border-radius: 8px ;
+    padding: 8px;
+    transition: background-color 0.4s ease;
+}
+.right ul li a:hover {
+    background-color: lightcoral;
+    color: orangered;
+}
+/* small liptop */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .navbar {
+        font-size: 1rem;
+    }
+    .logo img {
+        width: 130px;
+    }
+}
+
+/*Tablet Screen  */
+@media only screen and (min-width: 771px) and (max-width: 991px) {
+    .navbar {
+        font-size: 0.8rem;
+    }
+
+    .logo img {
+        width: 110px;
+    }
+    
+    
+}
+
+/* Media query for small screens */
+@media only screen and (max-width: 771px) {
+    .mid {
+        display: none;
+    }
+    .left{
+        display: flex;
+        justify-content: space-between;
+        width: 94%;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .right {
+        display: none;
+    }
+}
