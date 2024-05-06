@@ -31,10 +31,10 @@
         <!-- mid -->
         <div class="mid">
             <ul>
-                <li>Home</li>
-                <li>Menu</li>
-                <li>Services</li>
-                <li>Contact</li>
+                <li><a class="navBtn" href="#Home">Home</a></li>
+                <li><a class="navBtn" href="#Menu">Menu</a></li>
+                <li><a class="navBtn" href="#Services">Services</a></li>
+                <li><a class="navBtn" href="#Contact">Contact</a></li>
             </ul>
         </div>
         <!-- right -->
@@ -47,7 +47,7 @@
             </ul>
         </div>
     </nav>
-    <div class="home-page">
+    <div class="home-page" id="Home">
         <div class="home-inner">
             <h2>Order your favourite food here</h2>
             <p>Choose from a diverse menu featuring a detectable array of dishes crafted with the finest inngredients
@@ -57,7 +57,7 @@
         </div>
     </div>
     <!-- menu page -->
-    <div class="menu-page">
+    <div class="menu-page" id="Menu">
         <div class="menu-mainItem">
             <h1>Explore our menu</h1>
             <p>Choose from a diverse menu featuring a detectable array of dishes crafted with the finest inngredients
@@ -107,6 +107,12 @@
                     <div class="dishes-mainImgs">
                         <img class="foodimg" src="./images/roll1.png" alt="" srcset="">
                         <img class="plusimg" src="./images/plusIcon.png" alt="" srcset="">
+                        <div class="counterimg" style="display: none;">
+                            <img class="negativecounter" src="./images/negcounter.png" alt="" srcset="">
+                            <p class="countvalue">0</p>
+                            <img class="positivecounter" src="./images/positivecounter.png" alt="" srcset="">
+                           
+                        </div>
                     </div>
                     <div class="dish-heading">
                         <p>Lasagna Rolls</p>
@@ -160,7 +166,7 @@
         </div>
     </div>
     <!-- app -->
-    <div class="services-page">
+    <div class="services-page" id="Services">
         <h1>For Better Experience Download <br>Tomato App</h1>
         <div class="apps">
             <img src="./images/play_store-B2tFv0Hy.png" alt="" srcset="">
@@ -169,7 +175,7 @@
     </div>
 
     <!-- footer -->
-    <footer class="footer-page">
+    <footer class="footer-page" id="Contact">
         <div class="main-footer">
             <div class="left-footer">
                 <img src="./images/logo.png" alt="" srcset="">
@@ -203,6 +209,7 @@
     </footer>
     <script src="index.js"></script>
     <script src="./Javascript/filtering.js"></script>
+    <script src="./Javascript/scrolling.js"></script>
     <script>
       
     </script>

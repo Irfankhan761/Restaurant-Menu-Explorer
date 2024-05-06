@@ -50,10 +50,14 @@
     /* i want to increase size here */
     transform: scale(1.1);
 }
-.sample-items img:active{
+/* .sample-items img:active{
     border: 4px solid orange;
     padding: 2px;
     
+} */
+.sample-items.active img {
+    border: 4px solid orange;
+    padding: 2px;
 }
 .sample-items h3{
     margin-top: 10px;
@@ -118,6 +122,24 @@ hr{
 
 
 }
+.counterimg{
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px;
+    border-radius: 50px;
+    background: #fff;
+    cursor: pointer;
+}
+/* .counterimg img{
+    
+}
+.counterimg p{
+    
+} */
 
 .dish-heading{
     display: flex;

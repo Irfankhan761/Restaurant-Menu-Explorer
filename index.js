@@ -40,6 +40,12 @@ saladInfo.forEach((item)=>{
     <div class="dishes-mainImgs">
         <img class="foodimg" src="${item.foodImg}" alt="" srcset="">
         <img class="plusimg" src="${item.plusIcon}" alt="" srcset="">
+        <div class="counterimg" style="display: none;">
+                            <img class="negativecounter" src="./images/negcounter.png" alt="" srcset="">
+                            <p class="countvalue">0</p>
+                            <img class="positivecounter" src="./images/positivecounter.png" alt="" srcset="">
+                           
+                        </div>
     </div>
     <div class="dish-heading">
         <p>${item.foodName}</p>
@@ -91,6 +97,12 @@ roolInfo.forEach((item)=>{
     <div class="dishes-mainImgs">
         <img class="foodimg" src="${item.foodImg}" alt="" srcset="">
         <img class="plusimg" src="${item.plusIcon}" alt="" srcset="">
+        <div class="counterimg" style="display: none;">
+                            <img class="negativecounter" src="./images/negcounter.png" alt="" srcset="">
+                            <p class="countvalue">0</p>
+                            <img class="positivecounter" src="./images/positivecounter.png" alt="" srcset="">
+                           
+                        </div>
     </div>
     <div class="dish-heading">
         <p>${item.foodName}</p>
@@ -142,6 +154,12 @@ desertInfo.forEach((item)=>{
     <div class="dishes-mainImgs">
         <img class="foodimg" src="${item.foodImg}" alt="" srcset="">
         <img class="plusimg" src="${item.plusIcon}" alt="" srcset="">
+        <div class="counterimg" style="display: none;">
+                            <img class="negativecounter" src="./images/negcounter.png" alt="" srcset="">
+                            <p class="countvalue">0</p>
+                            <img class="positivecounter" src="./images/positivecounter.png" alt="" srcset="">
+                           
+                        </div>
     </div>
     <div class="dish-heading">
         <p>${item.foodName}</p>
@@ -193,6 +211,12 @@ sandwichInfo.forEach((item)=>{
     <div class="dishes-mainImgs">
         <img class="foodimg" src="${item.foodImg}" alt="" srcset="">
         <img class="plusimg" src="${item.plusIcon}" alt="" srcset="">
+        <div class="counterimg" style="display: none;">
+                            <img class="negativecounter" src="./images/negcounter.png" alt="" srcset="">
+                            <p class="countvalue">0</p>
+                            <img class="positivecounter" src="./images/positivecounter.png" alt="" srcset="">
+                           
+                        </div>
     </div>
     <div class="dish-heading">
         <p>${item.foodName}</p>
@@ -244,6 +268,12 @@ cakeInfo.forEach((item)=>{
     <div class="dishes-mainImgs">
         <img class="foodimg" src="${item.foodImg}" alt="" srcset="">
         <img class="plusimg" src="${item.plusIcon}" alt="" srcset="">
+        <div class="counterimg" style="display: none;">
+                            <img class="negativecounter" src="./images/negcounter.png" alt="" srcset="">
+                            <p class="countvalue">0</p>
+                            <img class="positivecounter" src="./images/positivecounter.png" alt="" srcset="">
+                           
+                        </div>
     </div>
     <div class="dish-heading">
         <p>${item.foodName}</p>
@@ -295,6 +325,12 @@ purevegInfo.forEach((item)=>{
     <div class="dishes-mainImgs">
         <img class="foodimg" src="${item.foodImg}" alt="" srcset="">
         <img class="plusimg" src="${item.plusIcon}" alt="" srcset="">
+        <div class="counterimg" style="display: none;">
+                            <img class="negativecounter" src="./images/negcounter.png" alt="" srcset="">
+                            <p class="countvalue">0</p>
+                            <img class="positivecounter" src="./images/positivecounter.png" alt="" srcset="">
+                           
+                        </div>
     </div>
     <div class="dish-heading">
         <p>${item.foodName}</p>
@@ -345,6 +381,12 @@ pastaInfo.forEach((item)=>{
     <div class="dishes-mainImgs">
         <img class="foodimg" src="${item.foodImg}" alt="" srcset="">
         <img class="plusimg" src="${item.plusIcon}" alt="" srcset="">
+        <div class="counterimg" style="display: none;">
+                            <img class="negativecounter" src="./images/negcounter.png" alt="" srcset="">
+                            <p class="countvalue">0</p>
+                            <img class="positivecounter" src="./images/positivecounter.png" alt="" srcset="">
+                           
+                        </div>
     </div>
     <div class="dish-heading">
         <p>${item.foodName}</p>
@@ -395,6 +437,12 @@ noodlesInfo.forEach((item)=>{
     <div class="dishes-mainImgs">
         <img class="foodimg" src="${item.foodImg}" alt="" srcset="">
         <img class="plusimg" src="${item.plusIcon}" alt="" srcset="">
+        <div class="counterimg" style="display: none;">
+                            <img class="negativecounter" src="./images/negcounter.png" alt="" srcset="">
+                            <p class="countvalue">0</p>
+                            <img class="positivecounter" src="./images/positivecounter.png" alt="" srcset="">
+                           
+                        </div>
     </div>
     <div class="dish-heading">
         <p>${item.foodName}</p>
@@ -405,3 +453,7 @@ noodlesInfo.forEach((item)=>{
     </div>`
     myitem.insertAdjacentHTML("beforeend",dishInfo)
 });
+
+
+
+
