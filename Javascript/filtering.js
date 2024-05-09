@@ -7,9 +7,9 @@ document.addEventListener("DOMContentLoaded", function() {
         dishes.forEach(dish => {
             const dishCategory = dish.getAttribute("data-category");
             if (dishCategory === category || category === 'all') {
-                dish.style.display = "block"; // Show matching dishes
+                dish.style.display = "block"; 
             } else {
-                dish.style.display = "none"; // Hide non-matching dishes
+                dish.style.display = "none"; 
             }
         });
     }
