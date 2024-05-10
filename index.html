@@ -4,16 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Food Dilevery</title>
     <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet" href="./CSS/navbar.css">
     <link rel="stylesheet" href="./CSS/homepage.css">
     <link rel="stylesheet" href="./CSS/menu.css">
     <link rel="stylesheet" href="./CSS/servicespage.css">
     <link rel="stylesheet" href="./CSS/footer.css">
+    <link rel="stylesheet" href="./CSS/cart.css">
     <style>
-
-
+       
 
     </style>
 </head>
@@ -41,14 +41,64 @@
         <div class="right">
             <ul>
                 <li><img src="./images/searchbar.png" alt="" srcset=""></li>
-                <li><img src="./images/cart.png" alt="" srcset="">
-                <div class="dot" style="display: none;"></div>
-                </li>
+                <li><img id="cartImg" onclick="toggleCartContainer()" src="./images/cart.png" alt="" srcset="">
+                    <div class="dot" style="display: none;"></div>
+                    </li>
                 <li><a href="#">Sign in</a></li>
 
             </ul>
         </div>
     </nav>
+    <!-- cart -->
+    <!-- id="itemList" -->
+    <div class="cart-container" >
+        <div class="cart-items" >
+            <div class="cart-items-titles" >
+                <p>Items</p>
+                <p>Title</p>
+                <p>Price</p>
+                <!-- <p>Quantity</p> -->
+                <p>Total</p>
+                <p>Remove</p>
+            </div>
+            <br>
+            <hr style="background-color: gray; height: 1px;" width="90%">
+            <div id="itemList">
+
+            </div >
+            <!-- <div class="cart-items-titles-list itemList" >
+              <p> <img src="./images/salad-1.png" alt="" srcset=""></p>
+                <p>Chicken Salad</p>
+                <p>$14</p>
+                <p>1</p>
+                <p>$14</p>
+                <p class="cross">X</p>
+                
+            </div>
+            <hr style="background-color: gray; height: 1px;"width="90%">    
+            <div class="cart-items-titles-list itemList" >
+                <p> <img src="./images/salad-1.png" alt="" srcset=""></p>
+                  <p>Chicken Salad</p>
+                  <p>$14</p>
+                  <p>1</p>
+                  <p>$14</p>
+                  <p class="cross">X</p>
+                  
+              </div>
+              <hr style="background-color: gray; height: 1px;"width="90%">           -->
+        </div>
+        <div class="cart-total">
+            <h2>Cart Total</h2>
+            <p>Sub Total <span id="sub">$0</span></p>
+            <p>Delivery Fee <span id="delivery">$0</span></p>
+            <p>Total <span id="totalPrice">$0</span></p>
+        </div>
+        
+        
+    </div>
+  
+    <div class="page">
+        <!-- home -->
     <div class="home-page" id="Home">
         <div class="home-inner">
             <h2>Order your favourite food here</h2>
@@ -123,47 +173,6 @@
                     <p class="dish-para">Food provides essential nutrients for overall health and well-being</p>
                     <p class="price">$14</p>
                 </div> -->
-
-                <!-- sss -->
-
-                <!-- <div class="dishes">
-                    <div class="dishes-mainImgs">
-                        <img class="foodimg" src="./images/roll1.png" alt="" srcset="">
-                        <img class="plusimg" src="./images/plusIcon.png" alt="" srcset="">
-                    </div>
-                    <div class="dish-heading">
-                        <p>Lasagna Rolls</p>
-                        <img src="./images/stars.png" alt="" srcset="">
-                    </div>
-                    <p class="dish-para">Food provides essential nutrients for overall health and well-being</p>
-                    <p class="price">$14</p>
-                </div>
-                <div class="dishes">
-                    <div class="dishes-mainImgs">
-                        <img class="foodimg" src="./images/roll1.png" alt="" srcset="">
-                        <img class="plusimg" src="./images/plusIcon.png" alt="" srcset="">
-                    </div>
-                    <div class="dish-heading">
-                        <p>Lasagna Rolls</p>
-                        <img src="./images/stars.png" alt="" srcset="">
-                    </div>
-                    <p class="dish-para">Food provides essential nutrients for overall health and well-being</p>
-                    <p class="price">$14</p>
-                </div>
-                <div class="dishes">
-                    <div class="dishes-mainImgs">
-                        <img class="foodimg" src="./images/roll1.png" alt="" srcset="">
-                        <img class="plusimg" src="./images/plusIcon.png" alt="" srcset="">
-                    </div>
-                    <div class="dish-heading">
-                        <p>Lasagna Rolls</p>
-                        <img src="./images/stars.png" alt="" srcset="">
-                    </div>
-                    <p class="dish-para">Food provides essential nutrients for overall health and well-being</p>
-                    <p class="price">$14</p>
-                </div> -->
-
-
             </div>
         </div>
     </div>
@@ -174,6 +183,7 @@
             <img src="./images/play_store-B2tFv0Hy.png" alt="" srcset="">
             <img src="./images/app_store-C8O_cY6s.png" alt="" srcset="">
         </div>
+    </div>
     </div>
 
     <!-- footer -->
@@ -214,6 +224,7 @@
     <script src="./Javascript/scrolling.js"></script>
     <script src="./Javascript/sampleItemstyle.js"></script>
     <script src="./Javascript/counter.js"></script>
+    <script src="./Javascript/cart.js"></script>
     <script>
       
     </script>

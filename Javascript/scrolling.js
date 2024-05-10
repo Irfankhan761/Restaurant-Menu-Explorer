@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     top: targetElement.offsetTop - document.querySelector('.navbar').offsetHeight,
                     behavior: 'smooth'
                 });
+                
             }
         });
     });
