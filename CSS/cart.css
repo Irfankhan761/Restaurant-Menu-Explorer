@@ -48,12 +48,20 @@
     /* border: 1px solid black; */
     margin: 20px auto;
 }
-.cart-total>h2{
-    font-size: 2rem;
-}
+
 .cart-total >*{
 margin-top: 10px;
 border-bottom: 2px solid gray;
+}
+.btn-totatal{
+    padding: 8px;
+    font-size: 1.2rem;
+    background-color: #ffffff;
+    color: #333;
+    border: 1px solid orangered;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
 }
 .cart-total>p>span{
     float: right;
